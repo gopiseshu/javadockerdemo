@@ -1,6 +1,9 @@
 
 pipeline {
     agent any
+    tools {
+        maven 'myMaven'
+    }
     
     environment {
         IMAGE_NAME = "gopikrishna1338/currency-exchange-microservice"
